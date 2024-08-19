@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Média</title>
+</head>
+<body>
+        <label for="n1">N1</label>
+        <input type="number" placeholder="Informe a primeira nota" id="n1" name="n1" required>
+        <br><br>
+
+        <label for="n2">N2</label>
+        <input type="number" placeholder="Informe a segunda nota" id="n2" name="n2" required>
+        <br><br>
+
+        <label for="n3">N3</label>
+        <input type="number" placeholder="Informe a terceira nota" id="n3" name="n3" required>
+        <br><br>
+        
+        <button onclick="calc()">Calcular</button>
+
+        <script>
+
+            function calc(){
+
+                var n1 = parseFloat(document.getElementById('n1').value)
+                var n2 = parseFloat(document.getElementById('n2').value)
+                var n3 = parseFloat(document.getElementById('n3').value)
+
+                media = (n1 + n2 + n3) / 3
+
+                alert(`Sua média é igual a ${media}`)
+            }
+        </script>
+</body>
+</html>
